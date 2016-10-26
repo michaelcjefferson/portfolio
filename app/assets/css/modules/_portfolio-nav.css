@@ -1,0 +1,46 @@
+.portfolio-nav {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ddd;
+  z-index: 5;
+
+  @mixin atSmall {
+    width: 75px;
+    height: 75px;
+  }
+
+  &__button {
+    height: 60px;
+    width: 60px;
+    padding: 5px;
+    border: 2px solid $blue;
+    border-radius: 50px;
+    margin: 25px 0;
+    background: #eee;
+
+    @mixin atSmall {
+      height: 45px;
+      width: 45px;
+    }
+  }
+
+  &__icon {
+    height: 50px;
+    width: 47px;
+
+    @mixin atSmall {
+      height: 35px;
+      width: 32px;
+    }
+  }
+
+  &__icon-fill {
+    fill: $blue;
+  }
+}

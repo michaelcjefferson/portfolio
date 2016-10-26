@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Michael C Jefferson</title>
+  <meta name="keywords" content="Keywords go here">
+  <meta name="description" content="Description goes here.">
+  <link rel="stylesheet" href="temp/css/styles.css">
+</head>
+
+<body>
+
+  <section class="modal">
+    <form class="modal__form">
+      <div class="modal__close-modal">X</div>
+      <textarea class="modal__message" type="text" placeholder="Message" required></textarea>
+      <div class="modal__footer">
+        <input class="modal__input modal__input--text" type="text" placeholder="Email Address" required>
+        <input class="modal__input modal__input--submit" type="submit">
+      </div>
+    </form>
+  </section>
+
+  <section class="profile">
+
+    <img class="profile__background b-lazy" src="temp/img/MistyRoadSmall.jpg" data-src="temp/img/MistyRoadLarge.jpg" alt="Background of a Misty Road"></img>
+    <!-- <section class="profile__background"></section> -->
+    <section class="profile__container">
+
+      <header class="profile-header">
+        <h1 class="profile-header__title">Michael C<br />Jefferson</h1>
+        <h2 class="profile-header__subtitle">Developer | Programmer</h2>
+      </header>
+
+      <article class="profile-article">
+        <p>Hey! I'm a guy from New Zealand who loves dabbling with code and making apps. I'm also really fond of music, and fried chicken and burgers are good friends of mine.</p>
+
+        <p>I'm working towards professional full-stackism, and at this stage most of my work has involved <span class="profile-article--highlight">Javascript</span>, though I'm pretty comfortable with <span class="profile-article--highlight">Python</span> as well. I've worked on a few projects using <span class="profile-article--highlight">React</span>, but my favourite framework is <span class="profile-article--highlight">VueJS</span> for sure!</p>
+
+        <p>On the server side, I'm a big fan of <span class="profile-article--highlight">NodeJS</span> coupled with <span class="profile-article--highlight">MongoDB</span>, but the truth is I'm keen to try and to learn whatever options are available. The most important thing, in my opinion, is to get the job done right.</p>
+
+        <p>Feel free to check out my code on Github, or flick me an email, I'm always keen for a conversation!</p>
+      </article>
+
+      <!-- <article class="profile-article">
+        <p>Whose woods these are I think I know.<br />
+        His house is in the village though;<br />
+        He will not see me stopping here<br />
+        To watch his woods fill up with snow.<br />
+        <br />
+        My little horse must think it queer<br />
+        To stop without a farmhouse near<br />
+        Between the woods and frozen lake<br />
+        The darkest evening of the year.<br />
+        <br />
+        He gives his harness bells a shake<br />
+        To ask if there is some mistake.<br />
+        The only other sound’s the sweep<br />
+        Of easy wind and downy flake.<br />
+        <br />
+        The woods are lovely, dark and deep,<br />
+        But I have promises to keep,<br />
+        And miles to go before I sleep.<br />
+        Did you hear me Butterfly?<br />
+        Miles to go before you sleep.</p>
+      </article> -->
+
+      <section class="profile-links">
+        <a class="profile-links__link profile-links__link--open-modal">
+          michaelcjefferson@gmail.com
+        </a>
+        <br />
+        <a
+          class="profile-links__link"
+          href="https://www.github.com/michaelcjefferson"
+          target="_blank"
+          rel="noopener noreferrer">
+          github.com/michaelcjefferson
+        </a>
+      </section>
+    </section>
+
+    <button class="profile-close">
+      <p class="profile-close__text">
+        TAKE<br />A<br />LOOK
+      </p>
+    </button>
+  </section>
+
+  <section class="portfolio-nav">
+    <a href="" class="portfolio-nav__button">
+      <svg class="portfolio-nav__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 48 60" enable-background="new 0 0 48 48" xml:space="preserve"><g><path class="portfolio-nav__icon-fill" fill="#000000" d="M41.5,48H6.4c-0.6,0-1-0.4-1-1V23.5c0-0.6,0.4-1,1-1h35.1c0.6,0,1,0.4,1,1V47C42.5,47.6,42.1,48,41.5,48z    M7.4,46h33.1V24.5H7.4V46z"/><path class="portfolio-nav__icon-fill" fill="#000000" d="M47,24.5H1c-0.4,0-0.8-0.2-0.9-0.6c-0.2-0.4-0.1-0.8,0.2-1.1l23-22.5c0.4-0.4,1-0.4,1.4,0l23,22.5   c0.3,0.3,0.4,0.7,0.2,1.1C47.8,24.3,47.4,24.5,47,24.5z M3.5,22.5h41.1L24,2.4L3.5,22.5z"/><path class="portfolio-nav__icon-fill" fill="#000000" d="M29.9,48c-0.6,0-1-0.4-1-1V37c0-2.7-2.2-5-4.9-5c-2.7,0-4.9,2.2-4.9,5v10c0,0.6-0.4,1-1,1s-1-0.4-1-1V37   c0-3.9,3.1-7,6.9-7s6.9,3.1,6.9,7v10C30.9,47.6,30.5,48,29.9,48z"/></g></svg>
+    </a>
+  </section>
+
+  <section class="portfolio">
+    <div class="portfolio-item portfolio__element">
+      <div class="portfolio-item__body">
+        <img class="portfolio-item__image b-lazy" src="temp/img/WeatherSmall.png" data-src="temp/img/WeatherLarge.png" alt="Preview of the Weather Site"></img>
+        <div class="portfolio-item__blurb">
+          <p class="portfolio-item__description">A responsive weather app built with React, the forecast.io API, and the Google Maps API.</p>
+          <div class="portfolio-item__menu">
+            <a class="portfolio-item__link portfolio-item__link--github"
+            href="https://www.github.com/michaelcjefferson/Weather-or-Not"
+            target="_blank"
+            rel="noopener noreferrer">
+              Github
+            </a>
+            <a class="portfolio-item__link portfolio-item__link--site"
+            href="https://www.mikoraza.red/weather"
+            target="_blank"
+            rel="noopener noreferrer">
+              Site
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item__overlay">
+        <p class="portfolio-item__overlay-text">A Weather App</p>
+      </div>
+    </div>
+
+    <div class="portfolio-item portfolio__element">
+      <div class="portfolio-item__body">
+        <img class="portfolio-item__image b-lazy" src="temp/img/CalculatorSmall.png" data-src="temp/img/CalculatorLarge.png" alt="Preview of the Calculator Site"></img>
+        <div class="portfolio-item__blurb">
+          <p class="portfolio-item__description">A calculator made with Javascript and jQuery.</p>
+          <div class="portfolio-item__menu">
+            <a class="portfolio-item__link portfolio-item__link--github"
+            href="https://www.github.com/michaelcjefferson/Calculator"
+            target="_blank"
+            rel="noopener noreferrer">
+              Github
+            </a>
+            <a class="portfolio-item__link portfolio-item__link--site"
+            href="https://www.mikoraza.red/calculator"
+            target="_blank"
+            rel="noopener noreferrer">
+              Site
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item__overlay">
+        <p class="portfolio-item__overlay-text">A Calculator</p>
+      </div>
+    </div>
+
+    <div class="portfolio-item portfolio__element">
+      <div class="portfolio-item__body">
+        <img class="portfolio-item__image b-lazy" src="temp/img/PomodoritoSmall.png" data-src="temp/img/PomodoritoLarge.png" alt="Preview of the Pomodorito Site"></img>
+        <div class="portfolio-item__blurb">
+          <p class="portfolio-item__description">A pomodoro clock, built using Javascript and jQuery.</p>
+          <div class="portfolio-item__menu">
+            <a class="portfolio-item__link portfolio-item__link--github"
+            href="https://www.github.com/michaelcjefferson/Pomodorito"
+            target="_blank"
+            rel="noopener noreferrer">
+              Github
+            </a>
+            <a class="portfolio-item__link portfolio-item__link--site"
+            href="https://www.mikoraza.red/pomodorito"
+            target="_blank"
+            rel="noopener noreferrer">
+              Site
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item__overlay">
+        <p class="portfolio-item__overlay-text">A Pomodorito Clock</p>
+      </div>
+    </div>
+
+    <div class="portfolio-item portfolio__element">
+      <div class="portfolio-item__body">
+        <img class="portfolio-item__image b-lazy" src="temp/img/Wikipedia-ViewerSmall.png" data-src="temp/img/Wikipedia-ViewerLarge.png" alt="Preview of the Wikipedia Viewer Site"></img>
+        <div class="portfolio-item__blurb">
+          <p class="portfolio-item__description">This app uses the Wikipedia API and Vue.js to asynchronously display search predictions for Wikipedia.</p>
+          <div class="portfolio-item__menu">
+            <a class="portfolio-item__link portfolio-item__link--github"
+            href="https://www.github.com/michaelcjefferson/WikiQuery"
+            target="_blank"
+            rel="noopener noreferrer">
+              Github
+            </a>
+            <a class="portfolio-item__link portfolio-item__link--site"
+            href="https://www.mikoraza.red/wikiquery"
+            target="_blank"
+            rel="noopener noreferrer">
+              Site
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item__overlay">
+        <p class="portfolio-item__overlay-text">A Wikipedia Tool</p>
+      </div>
+    </div>
+
+    <div class="portfolio-item portfolio__element">
+      <div class="portfolio-item__body">
+        <img class="portfolio-item__image b-lazy" src="temp/img/Beach-HitzSmall.png" data-src="temp/img/Beach-HitzLarge.png" alt="Preview of the Beach Hitz Site"></img>
+        <div class="portfolio-item__blurb">
+          <p class="portfolio-item__description">Pretty cool.</p>
+          <div class="portfolio-item__menu">
+            <a class="portfolio-item__link portfolio-item__link--github"
+            href="https://www.github.com/michaelcjefferson/Beach-Hitz"
+            target="_blank"
+            rel="noopener noreferrer">
+              Github
+            </a>
+            <a class="portfolio-item__link portfolio-item__link--site"
+            href="https://www.mikoraza.red/beach-hitz"
+            target="_blank"
+            rel="noopener noreferrer">
+              Site
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item__overlay">
+        <p class="portfolio-item__overlay-text">A Hell of a Party</p>
+      </div>
+    </div>
+
+    <div class="portfolio-item portfolio__element">
+      <div class="portfolio-item__body">
+        <img class="portfolio-item__image b-lazy" src="temp/img/Quote-MachineSmall.png" data-src="temp/img/Quote-MachineLarge.png" alt="Preview of the Quote Machine Site"></img>
+        <div class="portfolio-item__blurb">
+          <p class="portfolio-item__description">An app which displays random quotes when the button is pressed.</p>
+          <div class="portfolio-item__menu">
+            <a class="portfolio-item__link portfolio-item__link--github"
+            href="https://www.github.com/michaelcjefferson/Quote-Machine"
+            target="_blank"
+            rel="noopener noreferrer">
+              Github
+            </a>
+            <a class="portfolio-item__link portfolio-item__link--site"
+            href="https://www.mikoraza.red/quotes"
+            target="_blank"
+            rel="noopener noreferrer">
+              Site
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item__overlay">
+        <p class="portfolio-item__overlay-text">A Quote Machine</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="assets/js/blazy.min.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script>(function() {
+    var blazy = new Blazy();
+  })();</script>
+  <script src="assets/js/modules/modal.js"></script>
+  <script src="assets/js/modules/portfolio.js"></script>
+  <script src="assets/js/modules/profile.js"></script>
+
+</body>
+
+</html>

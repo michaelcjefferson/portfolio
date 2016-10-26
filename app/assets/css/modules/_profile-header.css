@@ -1,0 +1,42 @@
+.profile-header {
+  font-family: $header-font;
+  margin: 100px 10% 0;
+
+  @mixin atMedium {
+    margin: 75px 5% 0;
+  }
+
+  @mixin atSmall {
+    margin: 25px 5% 0;
+  }
+
+  &__title {
+    font-size: 4rem;
+    font-weight: 200;
+
+    @mixin atMedium {
+      font-size: 3.5rem;
+    }
+
+    @mixin atSmall {
+      font-size: 3rem;
+    }
+
+    @mixin atVerySmall {
+      font-size: 2rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 2rem;
+    font-weight: 300;
+
+    @mixin atMedium {
+      font-size: 1.6rem;
+    }
+
+    @mixin atSmall {
+      font-size: 1.3rem;
+    }
+  }
+}

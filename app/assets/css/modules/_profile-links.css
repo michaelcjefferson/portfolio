@@ -1,0 +1,33 @@
+.profile-links {
+  margin-left: 10%;
+
+  @mixin atMedium {
+    margin: 50px 5% 0;
+  }
+
+  @mixin atVerySmall {
+    margin-top: 20px;
+  }
+
+  &__link {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: $header-font;
+    color: $blue;
+    transition: color .3s linear;
+
+    &:hover {
+      color: $white;
+    }
+
+    @mixin atMedium {
+      font-size: 1.6rem;
+    }
+
+    @mixin atSmall {
+      font-size: 1.2rem;
+    }
+  }
+}
