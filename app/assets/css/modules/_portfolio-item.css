@@ -6,61 +6,10 @@
     cursor: context-menu;
   }
 
-  &__overlay {
-    position: absolute;
-    height: inherit;
-    width: inherit;
-    transition: all 1s ease-in-out;
-    font-size: 1.5rem;
-    font-family: $header-font;
-    color: $grey;
-    text-transform: uppercase;
-    letter-spacing: .05rem;
-    font-weight: 200;
-    display: flex;
-
-    &--center-overlay {
-      transform: translateX(50%);
-    }
-  }
-
-  /* SUPER WEIRD BUG: When one item is selected, all the animations work EXCEPT that the overlay text box first fades out and then after the animation completes, pops in all of a sudden. All of the animations seem to be working fine on the overlay text, except for this weird ghost animation, which doesn't seem to be to do with opacity or display. It works fine on the original single page stylus file. Try using the property rather than all in the transition property */
-  &__overlay-text {
-    width: 360px;
-    transition: all 1s ease-in-out;
-    display: flex;
-    margin: 0;
-    padding: 0;
-
-    &--background {
-      background: rgba(255, 255, 255, 0.8);
-      justify-content: center;
-      margin: 10px 0;
-      padding: 10px 0;
-      border-radius: 7px;
-      font-weight: 400;
-      transform: translateX(-50%);
-
-      @mixin atVerySmall {
-        border-radius: 0;
-      }
-    }
-  }
-
   &__body {
     flex: 1;
     opacity: .1;
     display: flex;
-
-    /*&--clear {
-      opacity: 1;
-      transition: all 5s ease-in-out;
-    }*/
-
-    /*&--clear {
-      opacity: .1;
-      transition: all 5s ease-in-out;
-    }*/
 
     &--clear {
       opacity: 1;
@@ -106,7 +55,7 @@
 
   &__menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 200px;
     margin-bottom: 8px;
     text-transform: uppercase;
@@ -114,12 +63,55 @@
   }
 
   &__link {
+    width: 100px;
+    text-align: center;
+
     &--github {
       color: $blue;
     }
 
     &--site {
       color: $red;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    transition: all 1s ease-in-out;
+    font-size: 1.5rem;
+    font-family: $header-font;
+    color: $grey;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    font-weight: 200;
+    display: flex;
+
+    &--center-overlay {
+      transform: translateX(50%);
+    }
+  }
+
+  &__overlay-text {
+    width: 360px;
+    transition: all 1s ease-in-out;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    &--background {
+      background: rgba(255, 255, 255, 0.8);
+      justify-content: center;
+      margin: 10px 0;
+      padding: 10px 0;
+      border-radius: 7px;
+      font-weight: 400;
+      transform: translateX(-50%);
+
+      @mixin atVerySmall {
+        border-radius: 0;
+      }
     }
   }
 }

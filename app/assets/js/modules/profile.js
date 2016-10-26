@@ -18,13 +18,3 @@ var profile = (function() {
     closeProfile: closeProfile
   }
 })();
-
-
-
-//   $('#close-profile').click(function() {
-//     var prof = $('#profile');
-//     prof.addClass('fade-profile');
-//     setTimeout(function() {
-//       prof.addClass('move-back');
-//     }, 1000);
-//   });

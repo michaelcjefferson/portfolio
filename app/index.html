@@ -4,8 +4,8 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Michael C Jefferson</title>
-  <meta name="keywords" content="Keywords go here">
-  <meta name="description" content="Description goes here.">
+  <meta name="keywords" content="portfolio michael jefferson michaelcjefferson">
+  <meta name="description" content="Drinking tea and eating burgers since '88.">
   <link rel="stylesheet" href="temp/css/styles.css">
 </head>
 
@@ -22,10 +22,14 @@
     </form>
   </section>
 
+  <section class="success">
+    Thanks!
+  </section>
+
   <section class="profile">
 
     <img class="profile__background b-lazy" src="temp/img/MistyRoadSmall.jpg" data-src="temp/img/MistyRoadLarge.jpg" alt="Background of a Misty Road"></img>
-    <!-- <section class="profile__background"></section> -->
+
     <section class="profile__container">
 
       <header class="profile-header">
@@ -42,29 +46,6 @@
 
         <p>Feel free to check out my code on Github, or flick me an email, I'm always keen for a conversation!</p>
       </article>
-
-      <!-- <article class="profile-article">
-        <p>Whose woods these are I think I know.<br />
-        His house is in the village though;<br />
-        He will not see me stopping here<br />
-        To watch his woods fill up with snow.<br />
-        <br />
-        My little horse must think it queer<br />
-        To stop without a farmhouse near<br />
-        Between the woods and frozen lake<br />
-        The darkest evening of the year.<br />
-        <br />
-        He gives his harness bells a shake<br />
-        To ask if there is some mistake.<br />
-        The only other sound’s the sweep<br />
-        Of easy wind and downy flake.<br />
-        <br />
-        The woods are lovely, dark and deep,<br />
-        But I have promises to keep,<br />
-        And miles to go before I sleep.<br />
-        Did you hear me Butterfly?<br />
-        Miles to go before you sleep.</p>
-      </article> -->
 
       <section class="profile-links">
         <a class="profile-links__link profile-links__link--open-modal">
@@ -97,18 +78,18 @@
   <section class="portfolio">
     <div class="portfolio-item portfolio__element">
       <div class="portfolio-item__body">
-        <img class="portfolio-item__image b-lazy" src="temp/img/WeatherSmall.png" data-src="temp/img/WeatherLarge.png" alt="Preview of the Weather Site"></img>
+        <img class="portfolio-item__image b-lazy" src="temp/img/Wikipedia-ViewerSmall.png" data-src="temp/img/Wikipedia-ViewerLarge.png" alt="Preview of the Wikipedia Viewer Site"></img>
         <div class="portfolio-item__blurb">
-          <p class="portfolio-item__description">A responsive weather app built with React, the forecast.io API, and the Google Maps API.</p>
+          <p class="portfolio-item__description">This app uses the Wikipedia API and Vue.js to asynchronously display search predictions for Wikipedia.</p>
           <div class="portfolio-item__menu">
             <a class="portfolio-item__link portfolio-item__link--github"
-            href="https://www.github.com/michaelcjefferson/Weather-or-Not"
+            href="https://www.github.com/michaelcjefferson/WikiQuery"
             target="_blank"
             rel="noopener noreferrer">
               Github
             </a>
             <a class="portfolio-item__link portfolio-item__link--site"
-            href="https://www.mikoraza.red/weather"
+            href="https://www.mikoraza.red/wikiquery"
             target="_blank"
             rel="noopener noreferrer">
               Site
@@ -117,7 +98,7 @@
         </div>
       </div>
       <div class="portfolio-item__overlay">
-        <p class="portfolio-item__overlay-text">A Weather App</p>
+        <p class="portfolio-item__overlay-text">A Wikipedia Tool</p>
       </div>
     </div>
 
@@ -175,27 +156,27 @@
 
     <div class="portfolio-item portfolio__element">
       <div class="portfolio-item__body">
-        <img class="portfolio-item__image b-lazy" src="temp/img/Wikipedia-ViewerSmall.png" data-src="temp/img/Wikipedia-ViewerLarge.png" alt="Preview of the Wikipedia Viewer Site"></img>
+        <img class="portfolio-item__image b-lazy" src="temp/img/WeatherSmall.png" data-src="temp/img/WeatherLarge.png" alt="Preview of the Weather Site"></img>
         <div class="portfolio-item__blurb">
-          <p class="portfolio-item__description">This app uses the Wikipedia API and Vue.js to asynchronously display search predictions for Wikipedia.</p>
+          <p class="portfolio-item__description">A responsive weather app built with React, the forecast.io API, and the Google Maps API. Unfortunately I don't have an SSL right now so this site isn't working at the moment but please check out the code on Github!</p>
           <div class="portfolio-item__menu">
             <a class="portfolio-item__link portfolio-item__link--github"
-            href="https://www.github.com/michaelcjefferson/WikiQuery"
+            href="https://www.github.com/michaelcjefferson/Weather-or-Not"
             target="_blank"
             rel="noopener noreferrer">
               Github
             </a>
-            <a class="portfolio-item__link portfolio-item__link--site"
-            href="https://www.mikoraza.red/wikiquery"
+            <!-- <a class="portfolio-item__link portfolio-item__link--site"
+            href="https://www.mikoraza.red/weather"
             target="_blank"
             rel="noopener noreferrer">
               Site
-            </a>
+            </a> -->
           </div>
         </div>
       </div>
       <div class="portfolio-item__overlay">
-        <p class="portfolio-item__overlay-text">A Wikipedia Tool</p>
+        <p class="portfolio-item__overlay-text">A Weather App</p>
       </div>
     </div>
 
@@ -257,9 +238,10 @@
   <script>(function() {
     var blazy = new Blazy();
   })();</script>
-  <script src="assets/js/modules/modal.js"></script>
-  <script src="assets/js/modules/portfolio.js"></script>
-  <script src="assets/js/modules/profile.js"></script>
+  <script src="assets/js/modules/Modal.js"></script>
+  <script src="assets/js/modules/Portfolio.js"></script>
+  <script src="assets/js/modules/Profile.js"></script>
+  <script src="assets/js/modules/SendEmail.js"></script>
 
 </body>
 

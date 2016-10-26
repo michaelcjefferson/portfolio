@@ -2,16 +2,9 @@
 
 $header-font: 'Raleway', sans-serif;
 $main-font: 'Lato', sans-serif;
-$darkblue: rgba(2, 0, 10, 0.7);
-$darkblue: rgba(27, 21, 89, 0.7);
 $blue: rgb(116, 145, 187);
 $red: rgb(184, 38, 6);
-$orange: rgb(199, 117, 42);
-$yellow: rgba(248, 255, 124, 1);
-$green: rgb(101, 209, 50);
 $white: rgb(251, 250, 232);
 $pink: rgb(203, 82, 66);
-/*$pink: rgb(245, 127, 106);*/
 $black: rgb(17, 17, 17);
 $grey: rgb(51, 51, 51);
-$border: 1px solid $white;

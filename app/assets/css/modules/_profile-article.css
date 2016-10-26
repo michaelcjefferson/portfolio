@@ -4,6 +4,7 @@
   line-height: 1.5;
   font-size: .9rem;
   margin: 0 10% 5px;
+  cursor: context-menu;
 
   &--highlight {
     font-weight: 600;

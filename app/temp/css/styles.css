@@ -251,7 +251,7 @@ html [type="button"], /* 1 */
  */::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
-}/*$pink: rgb(245, 127, 106);*/* {
+}* {
   box-sizing: border-box;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -354,6 +354,7 @@ html [type="button"], /* 1 */
 }.profile-header {
   font-family: 'Raleway', sans-serif;
   margin: 100px 10% 0;
+  cursor: context-menu;
 }@media (max-width: 800px){.profile-header{
     margin: 75px 5% 0;
   }
@@ -387,6 +388,7 @@ html [type="button"], /* 1 */
   line-height: 1.5;
   font-size: .9rem;
   margin: 0 10% 5px;
+  cursor: context-menu;
 }.profile-article--highlight {
   font-weight: 600;
   color: rgb(203, 82, 66);
@@ -585,11 +587,28 @@ html [type="button"], /* 1 */
 }@media (max-width: 580px){.modal__input--submit{
     margin: 0;
   }
+}.success {
+  z-index: 70;
+  position: absolute;
+  top: -140px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: context-menu;
+  background: rgb(101, 209, 50);
+  padding: 100px 55px 15px;
+  border-radius: 0 0 7px 7px;
+  -webkit-transition: all 0.5s cubic-bezier(0.59, -0.17, 0.3, 1.67);
+  transition: all 0.5s cubic-bezier(0.59, -0.17, 0.3, 1.67);
+}.success--show-success {
+  -webkit-transform: translate(-50%, 50px);
+          transform: translate(-50%, 50px);
 }.portfolio {
   width: 100%;
   height: 100vh;
   position: absolute;
-  /*background: #ddd;*/
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -658,47 +677,6 @@ html [type="button"], /* 1 */
       -ms-flex: 10;
           flex: 10;
   cursor: context-menu;
-}.portfolio-item__overlay {
-  position: absolute;
-  height: inherit;
-  width: inherit;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-  font-size: 1.5rem;
-  font-family: 'Raleway', sans-serif;
-  color: rgb(51, 51, 51);
-  text-transform: uppercase;
-  letter-spacing: .05rem;
-  font-weight: 200;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}.portfolio-item__overlay--center-overlay {
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
-}/* SUPER WEIRD BUG: When one item is selected, all the animations work EXCEPT that the overlay text box first fades out and then after the animation completes, pops in all of a sudden. All of the animations seem to be working fine on the overlay text, except for this weird ghost animation, which doesn't seem to be to do with opacity or display. It works fine on the original single page stylus file. Try using the property rather than all in the transition property */.portfolio-item__overlay-text {
-  width: 360px;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}.portfolio-item__overlay-text--background {
-  background: rgba(255, 255, 255, 0.8);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 10px 0;
-  padding: 10px 0;
-  border-radius: 7px;
-  font-weight: 400;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}@media (max-width: 360px){.portfolio-item__overlay-text--background{
-    border-radius: 0;
-  }
 }.portfolio-item__body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -706,14 +684,8 @@ html [type="button"], /* 1 */
   opacity: .1;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;/*&--clear {
-      opacity: 1;
-      transition: all 5s ease-in-out;
-    }*/
-}/*&--clear {
-      opacity: .1;
-      transition: all 5s ease-in-out;
-    }*/.portfolio-item__body--clear {
+  display: flex;
+}.portfolio-item__body--clear {
   opacity: 1;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
@@ -758,14 +730,59 @@ html [type="button"], /* 1 */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 200px;
   margin-bottom: 8px;
   text-transform: uppercase;
   font-size: 1.3rem;
+}.portfolio-item__link {
+  width: 100px;
+  text-align: center;
 }.portfolio-item__link--github {
   color: rgb(116, 145, 187);
 }.portfolio-item__link--site {
   color: rgb(184, 38, 6);
+}.portfolio-item__overlay {
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  font-size: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+  font-weight: 200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}.portfolio-item__overlay--center-overlay {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}.portfolio-item__overlay-text {
+  width: 360px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}.portfolio-item__overlay-text--background {
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px 0;
+  padding: 10px 0;
+  border-radius: 7px;
+  font-weight: 400;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}@media (max-width: 360px){.portfolio-item__overlay-text--background{
+    border-radius: 0;
+  }
 }

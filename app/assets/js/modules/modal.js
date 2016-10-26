@@ -26,13 +26,3 @@ var modal = (function() {
     closeModal: closeModal
   }
 })();
-
-
-
-
-//   $('.btn-cta').click(function () {
-//     $('.modal-overlay').addClass('is-open');
-//   });
-//   $('#close-btn').click(function () {
-//     $('.modal-overlay').removeClass('is-open');
-//   });

@@ -1,6 +1,7 @@
 .profile-header {
   font-family: $header-font;
   margin: 100px 10% 0;
+  cursor: context-menu;
 
   @mixin atMedium {
     margin: 75px 5% 0;

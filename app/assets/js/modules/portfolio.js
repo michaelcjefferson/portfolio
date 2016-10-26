@@ -27,16 +27,3 @@ var portfolio = (function() {
 
   return;
 })();
-
-
-
-//   $('.portfolio-element').click(function() {
-//     $('.portfolio-element').removeClass('grow');
-//     $('.portfolio-item').removeClass('clear');
-//     $('.portfolio-overlay').removeClass('center-overlay');
-//     $('.overlay-text').removeClass('overlay-text-background');
-//     $(this).addClass('grow');
-//     $(this).children('.portfolio-item').addClass('clear');
-//     $(this).children('.portfolio-overlay').addClass('center-overlay');
-//     $(this).children('.portfolio-overlay').children('.overlay-text').addClass('overlay-text-background');
-//   });
