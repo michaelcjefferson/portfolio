@@ -17,10 +17,15 @@ var sendEmail = (function() {
       event.preventDefault();
       var messageData = gatherMessageData(event);
       if (messageData) {
-        console.log(messageData);
+        $.post('/sites/sendEmail', messageData).done(function(data) {
+          if (data !== 'OK') {
+            alert('I had a problem receiving your message!');
+          } else {
+            showSuccess();
+          }
+        });
         closeModal();
         cleanModal();
-        showSuccess();
       }
     }
   }
