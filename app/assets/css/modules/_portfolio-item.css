@@ -8,12 +8,16 @@
 
   &__body {
     flex: 1;
-    opacity: .1;
     display: flex;
+    transition: all 1s ease-in-out;
+    box-shadow: rgba(20, 20, 20, 0.92) 0 0 0 200px inset;
 
     &--clear {
-      opacity: 1;
-      transition: all 1s ease-in-out;
+      box-shadow: none;
+    }
+
+    &--dull {
+      opacity: .5;
     }
   }
 
@@ -82,14 +86,15 @@
     transition: all 1s ease-in-out;
     font-size: 1.5rem;
     font-family: $header-font;
-    color: $grey;
     text-transform: uppercase;
     letter-spacing: .05rem;
     font-weight: 200;
     display: flex;
+    color: $white;
 
     &--center-overlay {
       transform: translateX(50%);
+      color: $grey;
     }
   }
 
