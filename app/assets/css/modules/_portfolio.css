@@ -12,5 +12,9 @@
     flex: 1 .1 auto;
     display: flex;
     transition: all 1s ease-in-out;
+
+    @mixin atSmall {
+      transition: none;
+    }
   }
 }

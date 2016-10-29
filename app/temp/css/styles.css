@@ -628,6 +628,10 @@ html [type="button"], /* 1 */
   display: flex;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+}@media (max-width: 580px){.portfolio__element{
+    -webkit-transition: none;
+    transition: none;
+  }
 }.portfolio-nav {
   width: 100px;
   height: 100px;
